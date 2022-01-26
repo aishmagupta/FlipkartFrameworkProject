@@ -35,6 +35,36 @@ public class Homepage extends TestBase {
 		driver.quit();
 	}
 	
+	@Test
+	public void ClickRadioBtn1() throws IOException 
+	{
+		driver = initialiseDriver();
+		driver.get(getProperty("url"));
+		driver.manage().window().maximize();
+		LandingPage lp = new LandingPage(driver);
+		lp.getXpopUpBtn().click();
+		lp.getLoginBtn().click();
+		lp.getUsernameBtn().sendKeys("abc");
+		lp.getPasswordBtn().sendKeys("abc");
+		lp.getSubmitBtn().click();
+		driver.quit();
+	}
+	
+	@Test
+	public void ClickRadioBtn2() throws IOException 
+	{
+		driver = initialiseDriver();
+		driver.get(getProperty("url"));
+		driver.manage().window().maximize();
+		LandingPage lp = new LandingPage(driver);
+		lp.getXpopUpBtn().click();
+		lp.getLoginBtn().click();
+		lp.getUsernameBtn().sendKeys("abc");
+		lp.getPasswordBtn().sendKeys("abc");
+		lp.getSubmitBtn().click();
+		driver.quit();
+	}
+	
 	
 	
 
