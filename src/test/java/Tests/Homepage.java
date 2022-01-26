@@ -17,7 +17,7 @@ public class Homepage extends TestBase {
 		driver.manage().window().maximize();
 		LandingPage lp = new LandingPage(driver);
 		System.out.print(lp.getSubTitle().getText());
-		driver.quit();
+		driver.quit() ;
 	}
 	
 	@Test
